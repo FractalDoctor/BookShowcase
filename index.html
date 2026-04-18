@@ -148,12 +148,42 @@
     margin: 0 0 20px 0;
   }
 
+  /* ── Book sections ── */
+  .book-section {
+    margin-bottom: 28px;
+  }
+
+  .book-section:last-of-type {
+    margin-bottom: 16px;
+  }
+
+  .section-header {
+    color: var(--amber);
+    font-size: 0.95rem;
+    letter-spacing: 0.2em;
+    padding: 6px 0;
+    margin-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+    text-shadow: 0 0 6px var(--amber-glow);
+  }
+
+  .section-header::before {
+    content: '▸ ';
+    color: var(--amber-dim);
+  }
+
+  .book-count {
+    color: var(--amber-dim);
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    margin-left: 8px;
+  }
+
   /* ── Book cards ── */
   .books {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin-bottom: 20px;
   }
 
   .book {
@@ -383,7 +413,7 @@
     <span>TTY/03</span>
     <span>LINK:UP</span>
     <span>5 VOLUMES CATALOGUED</span>
-    <span>2026-04-18 14:10 UTC</span>
+    <span>2026-04-18 14:17 UTC</span>
   </div>
 
   <div class="header">
@@ -394,135 +424,153 @@
 
   <hr class="divider">
 
-  <div class="books">
-    <div class="book">
-      <div class="book-content">
-        <div class="book-text">
-          <div class="book-header">
-            <span class="book-title">Return to Sender</span>
-            <span class="book-tag">THE GRAND GAME</span>
+  <section class="book-section group-series">
+    <div class="section-header">GRAND GAME SERIES <span class="book-count">[2]</span></div>
+    <div class="books">
+      <div class="book">
+        <div class="book-content">
+          <div class="book-text">
+            <div class="book-header">
+              <span class="book-title">The Machine</span>
+              <span class="book-tag">BOOK 1</span>
+            </div>
+            <div class="book-subtitle">A Progressive Engineer&#x27;s Guide to Corporate Survival</div>
+            <div class="book-meta">
+              <span class="book-category">SOFTWARE ENGINEERING</span>
+              <span class="book-sep">·</span>
+              <span class="book-date">2026</span>
+              <span class="book-sep">·</span>
+              <span class="book-asin">ASIN:B0GX1MCFCJ</span>
+            </div>
+            <div class="book-desc">Book 1 in the Anti-Airport Business Book series. The flagship Grand Game thesis — exposing managerial dysfunction, organisational incompetence, and the forces arrayed against anyone who actually wants to build things properly. The antidote to every vacuous leadership book you&#x27;ve ever been gifted by HR.</div>
+            <div class="book-links">
+              <a class="book-link" href="https://www.amazon.co.uk/dp/B0GX1MCFCJ" target="_blank" rel="noopener">▸ AMAZON UK</a>
+              <a class="book-link" href="https://www.amazon.com/dp/B0GX1MCFCJ" target="_blank" rel="noopener">▸ AMAZON US</a>
+            </div>
           </div>
-          <div class="book-subtitle">Why the Office Is Dead and Management Killed It</div>
-          <div class="book-meta">
-            <span class="book-category">SOFTWARE ENGINEERING</span>
-            <span class="book-sep">·</span>
-            <span class="book-date">2026</span>
-            <span class="book-sep">·</span>
-            <span class="book-asin">ASIN:B0GX3B6PXC</span>
-          </div>
-          <div class="book-desc">Book 2 in the Anti-Airport Business Book series. A tactical field guide to the greatest workplace conflict of our generation — the grinding, passive-aggressive campaign to drag engineers back into the empty offices the pandemic so mercifully emptied. The open-plan office as Bentham&#x27;s Panopticon, lightly refurbished, with a Nespresso machine.</div>
-          <div class="book-links">
-            <a class="book-link" href="https://www.amazon.co.uk/dp/B0GX3B6PXC" target="_blank" rel="noopener">▸ AMAZON UK</a>
-            <a class="book-link" href="https://www.amazon.com/dp/B0GX3B6PXC" target="_blank" rel="noopener">▸ AMAZON US</a>
-          </div>
+          <a class="book-cover-link" href="https://www.amazon.co.uk/dp/B0GX1MCFCJ" target="_blank" rel="noopener">
+            <img class="book-cover" src="https://m.media-amazon.com/images/P/B0GX1MCFCJ.01._SCLZZZZZZZ_SX200_.jpg" alt="The Machine" loading="lazy">
+          </a>
         </div>
-        <a class="book-cover-link" href="https://www.amazon.co.uk/dp/B0GX3B6PXC" target="_blank" rel="noopener">
-          <img class="book-cover" src="https://m.media-amazon.com/images/P/B0GX3B6PXC.01._SCLZZZZZZZ_SX200_.jpg" alt="Return to Sender" loading="lazy">
-        </a>
+      </div>
+      <div class="book">
+        <div class="book-content">
+          <div class="book-text">
+            <div class="book-header">
+              <span class="book-title">Return to Sender</span>
+              <span class="book-tag">BOOK 2</span>
+            </div>
+            <div class="book-subtitle">Why the Office Is Dead and Management Killed It</div>
+            <div class="book-meta">
+              <span class="book-category">SOFTWARE ENGINEERING</span>
+              <span class="book-sep">·</span>
+              <span class="book-date">2026</span>
+              <span class="book-sep">·</span>
+              <span class="book-asin">ASIN:B0GX3B6PXC</span>
+            </div>
+            <div class="book-desc">Book 2 in the Anti-Airport Business Book series. A tactical field guide to the greatest workplace conflict of our generation — the grinding, passive-aggressive campaign to drag engineers back into the empty offices the pandemic so mercifully emptied. The open-plan office as Bentham&#x27;s Panopticon, lightly refurbished, with a Nespresso machine.</div>
+            <div class="book-links">
+              <a class="book-link" href="https://www.amazon.co.uk/dp/B0GX3B6PXC" target="_blank" rel="noopener">▸ AMAZON UK</a>
+              <a class="book-link" href="https://www.amazon.com/dp/B0GX3B6PXC" target="_blank" rel="noopener">▸ AMAZON US</a>
+            </div>
+          </div>
+          <a class="book-cover-link" href="https://www.amazon.co.uk/dp/B0GX3B6PXC" target="_blank" rel="noopener">
+            <img class="book-cover" src="https://m.media-amazon.com/images/P/B0GX3B6PXC.01._SCLZZZZZZZ_SX200_.jpg" alt="Return to Sender" loading="lazy">
+          </a>
+        </div>
       </div>
     </div>
-    <div class="book">
-      <div class="book-content">
-        <div class="book-text">
-          <div class="book-header">
-            <span class="book-title">The Machine</span>
-            <span class="book-tag">THE GRAND GAME</span>
+  </section>
+  <section class="book-section group-grandgame">
+    <div class="section-header">GRAND GAME GENERAL <span class="book-count">[1]</span></div>
+    <div class="books">
+      <div class="book">
+        <div class="book-content">
+          <div class="book-text">
+            <div class="book-header">
+              <span class="book-title">Adventures In The Grand Game of Software Engineering</span>
+              <span class="book-tag">THE GRAND GAME</span>
+            </div>
+            <div class="book-meta">
+              <span class="book-category">SOFTWARE ENGINEERING</span>
+              <span class="book-sep">·</span>
+              <span class="book-date">2024</span>
+              <span class="book-sep">·</span>
+              <span class="book-asin">ASIN:B0B4TRJTFH</span>
+            </div>
+            <div class="book-desc">Essays from the trenches of the software industry. Corporate absurdity, managerial incompetence, and the quiet dignity of writing good code in hostile conditions.</div>
+            <div class="book-links">
+              <a class="book-link" href="https://www.amazon.co.uk/dp/B0B4TRJTFH" target="_blank" rel="noopener">▸ AMAZON UK</a>
+              <a class="book-link" href="https://www.amazon.com/dp/B0B4TRJTFH" target="_blank" rel="noopener">▸ AMAZON US</a>
+            </div>
           </div>
-          <div class="book-subtitle">A Progressive Engineer&#x27;s Guide to Corporate Survival</div>
-          <div class="book-meta">
-            <span class="book-category">SOFTWARE ENGINEERING</span>
-            <span class="book-sep">·</span>
-            <span class="book-date">2026</span>
-            <span class="book-sep">·</span>
-            <span class="book-asin">ASIN:B0GX1MCFCJ</span>
-          </div>
-          <div class="book-desc">Book 1 in the Anti-Airport Business Book series. The flagship Grand Game thesis — exposing managerial dysfunction, organisational incompetence, and the forces arrayed against anyone who actually wants to build things properly. The antidote to every vacuous leadership book you&#x27;ve ever been gifted by HR.</div>
-          <div class="book-links">
-            <a class="book-link" href="https://www.amazon.co.uk/dp/B0GX1MCFCJ" target="_blank" rel="noopener">▸ AMAZON UK</a>
-            <a class="book-link" href="https://www.amazon.com/dp/B0GX1MCFCJ" target="_blank" rel="noopener">▸ AMAZON US</a>
-          </div>
+          <a class="book-cover-link" href="https://www.amazon.co.uk/dp/B0B4TRJTFH" target="_blank" rel="noopener">
+            <img class="book-cover" src="https://m.media-amazon.com/images/P/B0B4TRJTFH.01._SCLZZZZZZZ_SX200_.jpg" alt="Adventures In The Grand Game of Software Engineering" loading="lazy">
+          </a>
         </div>
-        <a class="book-cover-link" href="https://www.amazon.co.uk/dp/B0GX1MCFCJ" target="_blank" rel="noopener">
-          <img class="book-cover" src="https://m.media-amazon.com/images/P/B0GX1MCFCJ.01._SCLZZZZZZZ_SX200_.jpg" alt="The Machine" loading="lazy">
-        </a>
       </div>
     </div>
-    <div class="book">
-      <div class="book-content">
-        <div class="book-text">
-          <div class="book-header">
-            <span class="book-title">Adventures In The Grand Game of Software Engineering</span>
-            <span class="book-tag">THE GRAND GAME</span>
+  </section>
+  <section class="book-section group-work">
+    <div class="section-header">WORK <span class="book-count">[1]</span></div>
+    <div class="books">
+      <div class="book">
+        <div class="book-content">
+          <div class="book-text">
+            <div class="book-header">
+              <span class="book-title">Performance Reviews Suck!</span>
+              <span class="book-tag">THE GRAND GAME</span>
+            </div>
+            <div class="book-meta">
+              <span class="book-category">SOFTWARE ENGINEERING</span>
+              <span class="book-sep">·</span>
+              <span class="book-date">2022</span>
+              <span class="book-sep">·</span>
+              <span class="book-asin">ASIN:B0D1RKY1GY</span>
+            </div>
+            <div class="book-desc">A systematic dismantling of performance review theatre — 360 reviews, SMART goals, annual cycles, and every other instrument of corporate self-delusion.</div>
+            <div class="book-links">
+              <a class="book-link" href="https://www.amazon.co.uk/dp/B0D1RKY1GY" target="_blank" rel="noopener">▸ AMAZON UK</a>
+              <a class="book-link" href="https://www.amazon.com/dp/B0D1RKY1GY" target="_blank" rel="noopener">▸ AMAZON US</a>
+            </div>
           </div>
-          <div class="book-meta">
-            <span class="book-category">SOFTWARE ENGINEERING</span>
-            <span class="book-sep">·</span>
-            <span class="book-date">2024</span>
-            <span class="book-sep">·</span>
-            <span class="book-asin">ASIN:B0B4TRJTFH</span>
-          </div>
-          <div class="book-desc">Essays from the trenches of the software industry. Corporate absurdity, managerial incompetence, and the quiet dignity of writing good code in hostile conditions.</div>
-          <div class="book-links">
-            <a class="book-link" href="https://www.amazon.co.uk/dp/B0B4TRJTFH" target="_blank" rel="noopener">▸ AMAZON UK</a>
-            <a class="book-link" href="https://www.amazon.com/dp/B0B4TRJTFH" target="_blank" rel="noopener">▸ AMAZON US</a>
-          </div>
+          <a class="book-cover-link" href="https://www.amazon.co.uk/dp/B0D1RKY1GY" target="_blank" rel="noopener">
+            <img class="book-cover" src="https://m.media-amazon.com/images/P/B0D1RKY1GY.01._SCLZZZZZZZ_SX200_.jpg" alt="Performance Reviews Suck!" loading="lazy">
+          </a>
         </div>
-        <a class="book-cover-link" href="https://www.amazon.co.uk/dp/B0B4TRJTFH" target="_blank" rel="noopener">
-          <img class="book-cover" src="https://m.media-amazon.com/images/P/B0B4TRJTFH.01._SCLZZZZZZZ_SX200_.jpg" alt="Adventures In The Grand Game of Software Engineering" loading="lazy">
-        </a>
       </div>
     </div>
-    <div class="book">
-      <div class="book-content">
-        <div class="book-text">
-          <div class="book-header">
-            <span class="book-title">Thoughts On The Simulation Hypothesis</span>
-            <span class="book-tag">PHILOSOPHY</span>
+  </section>
+  <section class="book-section group-philosophy">
+    <div class="section-header">PHILOSOPHY <span class="book-count">[1]</span></div>
+    <div class="books">
+      <div class="book">
+        <div class="book-content">
+          <div class="book-text">
+            <div class="book-header">
+              <span class="book-title">Thoughts On The Simulation Hypothesis</span>
+              <span class="book-tag">PHILOSOPHY</span>
+            </div>
+            <div class="book-meta">
+              <span class="book-category">PHILOSOPHY</span>
+              <span class="book-sep">·</span>
+              <span class="book-date">2024</span>
+              <span class="book-sep">·</span>
+              <span class="book-asin">ASIN:B0CVS6TR62</span>
+            </div>
+            <div class="book-desc">Are we living in a simulation? Does it matter? What would Nietzsche say? Existential speculation grounded in physics, computation, and a healthy dose of cosmic indifference.</div>
+            <div class="book-links">
+              <a class="book-link" href="https://www.amazon.co.uk/dp/B0CVS6TR62" target="_blank" rel="noopener">▸ AMAZON UK</a>
+              <a class="book-link" href="https://www.amazon.com/dp/B0CVS6TR62" target="_blank" rel="noopener">▸ AMAZON US</a>
+            </div>
           </div>
-          <div class="book-meta">
-            <span class="book-category">PHILOSOPHY</span>
-            <span class="book-sep">·</span>
-            <span class="book-date">2024</span>
-            <span class="book-sep">·</span>
-            <span class="book-asin">ASIN:B0CVS6TR62</span>
-          </div>
-          <div class="book-desc">Are we living in a simulation? Does it matter? What would Nietzsche say? Existential speculation grounded in physics, computation, and a healthy dose of cosmic indifference.</div>
-          <div class="book-links">
-            <a class="book-link" href="https://www.amazon.co.uk/dp/B0CVS6TR62" target="_blank" rel="noopener">▸ AMAZON UK</a>
-            <a class="book-link" href="https://www.amazon.com/dp/B0CVS6TR62" target="_blank" rel="noopener">▸ AMAZON US</a>
-          </div>
+          <a class="book-cover-link" href="https://www.amazon.co.uk/dp/B0CVS6TR62" target="_blank" rel="noopener">
+            <img class="book-cover" src="https://m.media-amazon.com/images/P/B0CVS6TR62.01._SCLZZZZZZZ_SX200_.jpg" alt="Thoughts On The Simulation Hypothesis" loading="lazy">
+          </a>
         </div>
-        <a class="book-cover-link" href="https://www.amazon.co.uk/dp/B0CVS6TR62" target="_blank" rel="noopener">
-          <img class="book-cover" src="https://m.media-amazon.com/images/P/B0CVS6TR62.01._SCLZZZZZZZ_SX200_.jpg" alt="Thoughts On The Simulation Hypothesis" loading="lazy">
-        </a>
       </div>
     </div>
-    <div class="book">
-      <div class="book-content">
-        <div class="book-text">
-          <div class="book-header">
-            <span class="book-title">Performance Reviews Suck!</span>
-            <span class="book-tag">THE GRAND GAME</span>
-          </div>
-          <div class="book-meta">
-            <span class="book-category">SOFTWARE ENGINEERING</span>
-            <span class="book-sep">·</span>
-            <span class="book-date">2022</span>
-            <span class="book-sep">·</span>
-            <span class="book-asin">ASIN:B0D1RKY1GY</span>
-          </div>
-          <div class="book-desc">A systematic dismantling of performance review theatre — 360 reviews, SMART goals, annual cycles, and every other instrument of corporate self-delusion.</div>
-          <div class="book-links">
-            <a class="book-link" href="https://www.amazon.co.uk/dp/B0D1RKY1GY" target="_blank" rel="noopener">▸ AMAZON UK</a>
-            <a class="book-link" href="https://www.amazon.com/dp/B0D1RKY1GY" target="_blank" rel="noopener">▸ AMAZON US</a>
-          </div>
-        </div>
-        <a class="book-cover-link" href="https://www.amazon.co.uk/dp/B0D1RKY1GY" target="_blank" rel="noopener">
-          <img class="book-cover" src="https://m.media-amazon.com/images/P/B0D1RKY1GY.01._SCLZZZZZZZ_SX200_.jpg" alt="Performance Reviews Suck!" loading="lazy">
-        </a>
-      </div>
-    </div>
-  </div>
+  </section>
 
   <div class="author-links">
     <a class="author-link" href="https://www.amazon.co.uk/s?i=digital-text&rh=p_27%3ADr%2BStuart%2BWoolley&s=relevancerank&text=Dr+Stuart+Woolley&ref=dp_byline_sr_ebooks_1" target="_blank" rel="noopener">AMAZON UK</a>
@@ -554,7 +602,7 @@
   </div>
 
   <div class="footer">
-    UPDATED: 2026-04-18 14:10 UTC
+    UPDATED: 2026-04-18 14:17 UTC
   </div>
 
 </div>
